@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+*{box-sizing:border-box; margin:0px; padding:0px;}
+body{
+  margin:0px;
+  text-align:center;
+  font-family:'Poppins';
+  background:lightgray;
+}
+header h2#logo-text{
+  margin-top:5px;
+  color:#3f3f3f;
+  text-align:left;
+}
+header{
+  position:sticky;
+  top:0px;
+  z-index:1;
+  background:lightgray;
+  max-width:1200px;
+  margin:auto;
+}
+header nav{
+  margin:5px auto;
+  border-bottom:1px solid #333;
+}
+header nav a{
+  display:inline-block;
+  padding:10px;
+  width:15%;
+  font-size:1.2em;
+  text-decoration:none;
+}
+main{
+  /*max-width:1200px;*/
+  margin:auto;
+}
+
+main aside{
+ border-top:2px solid green;
+ position:sticky;
+ top:120px;
+ float:left; 
+ padding:10px;
+ width:25%;
+ height:100%;
+ box-shadow:1px 1px  10px 0  rgba(0, 0, 0, 0.5);
+ background:lightgray;
+}
+
+main aside nav a{
+ display:block; 
+ font-size:1.2em;
+ padding:30px;
+ border-bottom:1px solid black;
+ text-decoration:none;
+}
+main aside nav a:last-child{
+ border-bottom:none;
+}
+main aside nav a:hover{
+ background:rgba(0, 0, 0, 0.1);
+ color:white;
+}
+main section{
+ float:right;
+ padding:10px;
+ margin-right:10%;
+ width:60%;
+}
+main section .text{ 
+ width:100%;
+}
+main section img{
+ width:65%;
+}
+main section article {
+ margin-bottom:50px;
+ border-bottom:1px solid black;
+ padding-bottom:50px;
+ columns:2;
+ column-gap:10px;
+}
+.clearfix:after{
+  content:'';
+  display:block;
+  clear:both;
+}
+/* Responsive */
+
+@media screen and  (max-width:900px){
+ header nav a { 
+  font-size:1em;
+ }
+ main section article{
+  columns :1; 
+ }
+ img{margin-top:30px;}
+ main aside nav a{
+  font-size:1em;
+ }
+}
+@media screen and (max-width:750px){
+ main aside > nav{
+   display:none; 
+ } 
+ main aside{width:10%; top:90px;}
+ main section{width:75%}
+ main aside:hover + section{
+   width:50%;
+ }
+ main aside:hover{
+   width:35%;
+   background:none;
+ }
+ main aside:hover > nav{
+   display:block;
+   background:none;
+ }
+ header nav a,h2{
+   font-size:15px;
+ }
+}

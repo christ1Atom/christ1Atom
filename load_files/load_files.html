@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Keep Learning</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" href="load_files.css"/>
+</head>
+<body>
+	<header>
+		<h1>Image js Crud</h1>
+	</header>
+	<main>
+		<aside>
+			<div class="form">
+				<label for="loadImg">
+					<img src="img/person.png"/>
+				</label>
+				<input type="file" accept="image/*"  id="loadImg"/>
+				<input type="text" id="uid" placeholder="User Name:"/>
+				<input type="number" id="age" placeholder="Age:"/>
+				<input type="email" id="email" placeholder="E-mail:"/>
+				<input type="number" id="mobile" placeholder="Mobile: +"/>
+				<button class="btn">save</button>
+			</div>	
+		</aside>
+		<section>
+			<h2>Images Loaded</h2>
+			<div class="img-store">
+				<!--
+				<div class="loaded-image">
+					<img src="img/person.png"/>
+					<div class="name-space">
+						<p>User Name</p>
+						<p>Age </p>
+						<p>E-mail</p>
+						<p>Mobile</p>
+					</div>
+				</div>
+				<div class="loaded-image">
+					<img src="img/person.png"/>
+					<div class="name-space">
+						<p>User Name</p>
+						<p>Age </p>
+						<p>E-mail</p>
+						<p>Mobile</p>
+					</div>
+				</div>
+				-->
+			</div>
+		</section>
+	</main>
+	<div class="show-info">
+		<div id="show-header">
+		      <ul>
+			<li id="infor">Infor@</li>
+			<li id="show-close"></li>
+		      </ul>
+		</div>
+		<div id="show-body">
+			<div class="show-body-img">
+				<img src="img/person.png">
+			</div>
+			<div class="show-body-txt">
+				<ul class="name">
+					<li><h5>JOHN LARK</h5></li>
+				</ul>
+				<h3>know</h3>
+				<ul class="about-01">
+					<li class='info-01' contenteditable='false'>35</li>
+					<li class='info-02' contenteditable='false'>chris@gmail.com</li>
+					<li class='info-03' contenteditable='false'>08038483900</li>
+				</ul>
+				<h3>Unknown</h3>
+				<ul class="about-02">
+					<li>D.O.B:</li>
+					<li>R.O.B:</li>
+					<li>Citizen:</li>
+					<li>Height:</li>
+					<li>Hair colour:</li>
+					<li>Eye colour:</li>
+				</ul>
+				<ul class="about-03">
+					<li>Location:</li>
+					<li>Associates:</li>
+				</ul>
+			</div>
+		</div>
+		<div id="show-footer">
+			<ul>
+				<li title='Edit the profile' id='show-update'>Update</li>
+				<li title='Delete the profile' id='show-delete'>Delete</li>
+				<li title='Save profile after Editing' id='show-save'>Save</li>
+			</ul>
+		</div>
+	</div>
+	<footer>@copyright Augus 7 2024</footer>
+	<script src="load_files.js"></script>
+</body>
+</html>

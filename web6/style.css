@@ -1,0 +1,374 @@
+*{box-sizing:border-box; margin:0px; padding:0px;}
+body{
+ 	/*background:#FC436B;*/
+	/*background:#53dfff;*/
+ 	font-family:Arial, serif;
+}
+header{
+	height:55px;
+	position:sticky;
+	top:0;
+	border-bottom:2px solid;
+	z-index:1;
+}
+/* created class to easy design */
+.b-color-01{
+	background:#53dfff;
+}
+.b-color-02{
+	background:#fc436b;
+}
+.pr-color-01{
+	color:#fff;
+}
+.pr-color-02{
+	color:#fc436b;
+}
+/* ********************** */
+.menu-list{
+	position:absolute;
+	font-size:2.3em;
+	top:0;
+}
+.menu-list #menu{
+	display:none;
+}
+.menu-list label{
+	padding:5px 10px;
+}
+.menu-list input:checked + .nav{
+	display:block;
+}
+.nav{
+	position:fixed;
+	display:none;
+	width:100%;  min-height:100px;
+	min-height:100px;
+	margin-top:12px;
+}
+.nav li{
+	font-size:0.45em;
+	list-style:none;
+	padding:5px 10px;
+	border-bottom:1px solid;
+}
+.nav a{text-decoration:none;}
+.nav a:first-child li::before{
+	content:'🏠';
+	padding-right:2px;
+}
+.nav  a:nth-child(2) li::before{
+	content:'👨‍💻';
+	padding-right:2px;
+}
+.nav a:nth-child(3) li::before{
+	content:'✔  ';
+	padding-right:2px;
+}
+.nav a:nth-child(4) li::before{
+	content:'🧠';
+	padding-right:2px;
+}
+.nav a:nth-child(5) li::before{
+	content:'🐞';
+	padding-right:2px;
+}
+.nav a:last-child li::before{
+	content:'✔  ';
+	padding-right:2px;
+}
+
+.com-name{
+	min-height:40px;
+	display:flex;
+	justify-content:space-around;
+	place-items:center;
+	margin-left:50px;
+}
+.com-name img{
+	width:50px;
+	height:50px;
+	margin:0.1em;
+	grid-column:4/5;
+	border-radius:50px;
+}
+
+main{
+	min-height:100vh;
+}
+section{text-align:center;min-height:450px;}
+section#home{
+	position:relative;
+	background-image:url('img/computer5.png');
+	background-repeat:none;
+	background-position:fixed;
+	background-attachment:center;
+	background-size:450px;
+	text-align:center;
+}
+section#home h1{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	font-size:2.5em;
+}
+section#about{
+	width:98%;
+	margin:auto;
+	margin-top:4.5em;
+	padding:10px;
+	border:2px solid;
+}
+section#about div.text{
+	display:block;	
+	padding:10px;
+}
+section#about h2{
+	margin:15px;
+	font-size:2.35em;
+}
+section#about .img{
+	margin-top:15px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	padding:10px;
+}
+section#about img{
+	width:65px;
+	min-height:65px;
+	border-radius:50px;
+	border:2px solid;
+}
+
+section#data-recovery{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	grid-auto-rows:minmax(150px,auto);
+	grid-gap:10px;
+	padding:10px;
+}
+h2#data-h2{
+	text-align:center;
+	margin-top:4.5em;
+}
+section#data-recovery a{
+	text-decoration:none;
+	border:1px solid;
+}
+section#data-recovery #fa{
+	background-image:url('social-img/fa.png');
+	background-size:cover;
+}
+section#data-recovery #tw{
+	background-image:url('social-img/tw.png');
+	background-size:cover;
+}
+section#data-recovery #in{
+	background-image:url('social-img/in.png');
+	background-size:cover;
+}
+section#data-recovery #go{
+	background-image:url('social-img/go.png');
+	background-size:cover;
+}
+section#data-recovery #pro{
+	background-image:url('social-img/go.png');
+	background-size:cover;
+}
+section#data-recovery a {
+	align-content:center;
+	font-size:1.25em;
+	padding:5px;
+}
+section#data-recovery li{
+	list-style:none;
+}
+section#contribute{
+	padding:10px;
+}
+section#contribute h2{
+	margin-top:4.5em;
+	margin-bottom:20px;
+}
+section#contribute form input{
+	display:block;
+	margin:auto;
+	width:300px;
+	font-size:0.8em;
+	padding:10px;
+	margin-bottom:10px;
+	outline:none;
+	border:none;
+	box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.7);
+}
+#message{
+	display:block;
+	margin:auto;
+	min-height:80px;
+	width:300px;
+	padding:10px;
+	font-family:Arial;
+	margin-bottom:10px;
+	box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.7);
+	outline:none;
+	border:none;
+	resize:none;
+}
+section#contribute form input[type='submit']{
+	width:150px;
+	font-size:1em;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+section#report-bug{
+	padding:10px;
+}
+section#report-bug h2{
+	margin-top:4.5em;
+	margin-bottom:20px;
+}
+section#report-bug form input{
+	display:block;
+	margin:auto;
+	width:300px;
+	font-size:0.8em;
+	padding:10px;
+	margin-bottom:10px;
+	outline:none;
+	border:none;
+	box-shadow:0 0 5px 0 rgba(0, 0, 0, 0.7);
+}
+section#report-bug form input[type='submit']{
+	width:150px;
+	margin-top:50px;
+	margin-bottom:50px;
+	font-size:1em;
+}
+section#report-bug p{
+	margin-bottom:10px;
+	font-size:0.8em;
+}
+footer{
+	display:grid;
+
+	padding:20px;
+	grid-template-columns:repeat(2,1fr);
+	grid-gap:10px;
+	min-height:80px;
+	font-size:0.8em;
+	color:#000;
+	background:#333;
+}
+footer .f-copy-right{
+	margin-top:10px;
+	grid-column:span 2;
+	font-size:0.8em;
+	text-align:center;
+}
+@keyframes moveImage{
+	0%{
+		background-image:url('img/computer5.png');
+	}
+	25%{
+		background-image:url('img/computer.png');
+	}
+	75%{
+		background-image:url('img/computer4.jfif');
+	}
+	100%{
+		background-image:url('img/computer12.png');
+	}
+
+}
+@media screen and (min-width:500px){
+	section#data-recovery{
+		grid-template-columns:repeat(3,1fr);
+		grid-gap:5px;
+	}
+}
+@media screen and (min-width:630px){
+	.img img{
+		flex-basis:10%;
+	}
+	section#data-recovery{
+		grid-template-columns:repeat(3,1fr);
+		grid-gap:5px;
+	}
+	section#contribute form input#full-name{
+		min-width:500px;
+	}
+	section#contribute form input#email{
+		display:inline-block;
+		width:248px;
+	}
+	section#contribute form input#phone{
+		display:inline-block;
+		width:248px;
+	}
+	section#contribute form #message{
+		min-width:500px;
+	}
+	/* ------------------------ */
+	section#report-bug p{
+		display:block;
+		margin:auto;
+		margin-bottom:15px;
+		width:500px;
+	}
+	section#report-bug form input#full-name{
+		min-width:500px;
+	}
+	section#report-bug form input#email{
+		display:inline-block;
+		width:248px;
+	}
+	section#report-bug form input#phone{
+		display:inline-block;
+		width:248px;
+	}
+	section#report-bug form #message{
+		min-width:500px;
+	}
+}
+
+/* Design color and Effectiveness on event and hover */
+
+
+@media screen and (min-width:900px){
+	main{
+		margin-left:25%;
+		min-height:100vh;
+	}
+	footer{
+		margin-left:25%;
+	}
+	.menu-list{
+		position:fixed;
+		width:25%;
+		height:100%;
+	}
+	.nav{
+		position:relative;
+		display:block;
+		margin-top:4.3px;
+	}
+	.nav a:first-child li{
+		border-top:2px solid;
+	}
+	.com-name{
+		width:75%;
+		margin-left:25%;
+		height:47.5px;
+	}
+}
+@media screen and (min-width:1030px){
+	section#data-recovery{
+		padding:15px;
+		grid-gap:15px;
+	}
+	.com-name h3{
+		font-size:2.4em;
+	}
+}

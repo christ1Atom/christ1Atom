@@ -1,0 +1,41 @@
+*{box-sizing:border-box; margin:0px; padding:0px; overflow:hidden;}
+body{
+  text-align:center;
+}
+header{
+  background:yellow;
+  padding:10px;
+}
+main{
+  width:450px;
+  margin:10px auto;
+  background:#3344ddce;
+  height:500px;
+}
+main h2{
+  margin:15px;
+}
+input{
+  display:block;
+  width:400px;
+  margin:auto;
+  outline:none;
+  font-size:15px;
+  padding:10px;
+  margin-bottom:30px;
+}
+input[type='number']{
+  display:inline-block;
+  width:300px;
+  margin-left:6px;
+}
+select{
+  width:90px;
+  padding:10px;
+  font-size:15px;
+}
+button{
+  margin-right:73%;
+  padding:10px;
+  font-size:15px;
+}
